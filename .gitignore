@@ -1,0 +1,10 @@
+# Patterns of intentionally untracked files that Git should ignore
+
+# Virtual Python Environment builder
+.virtualenv/
+
+# JavaScript tools and libraries
+node_modules/
+
+# Crossbar directory
+.crossbar/
