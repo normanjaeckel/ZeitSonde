@@ -42,9 +42,13 @@ workers:
       type: guest
       executable: python
       arguments:
-        - main.py
+        - -m
+        - server
       options:
-        workdir: ../server
+        env:
+          vars:
+            ZEITSONDE_LOGLEVEL: "10"
+        workdir: ..
         watch:
           directories:
             - ../server
