@@ -47,7 +47,7 @@ workers:
       options:
         env:
           vars:
-            ZEITSONDE_LOGLEVEL: "10"
+            ZEITSONDE_LOGLEVEL: info
         workdir: ..
         watch:
           directories:
