@@ -12,7 +12,7 @@ workers:
             name: anonymous
             permissions:
               -
-                uri: "*"
+                uri: ""
                 match: prefix
                 allow:
                   call: true
@@ -48,6 +48,10 @@ workers:
         env:
           vars:
             ZEITSONDE_LOGLEVEL: info
+            ZEITSONDE_WAMP_ROUTER_URL: ws://localhost:8080/ws
+            ZEITSONDE_WAMP_REALM: realm1
+            ZEITSONDE_MONGODB_CONNECTION_URI: mongodb://localhost:27017
+            ZEITSONDE_MONGODB_DATABASE_NAME: ZeitSonde
         workdir: ..
         watch:
           directories:
