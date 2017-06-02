@@ -32,6 +32,11 @@ To setup and run our client application open a new terminal and run:
 
     $ echo TODO
 
+The client was bootstrapped with [Create React
+App](https://github.com/facebookincubator/create-react-app), see [this
+guide](https://github.com/facebookincubator/create-react-app/blob/master/pack
+ages/react-scripts/template/README.md).
+
 
 ## Open Browser
 
